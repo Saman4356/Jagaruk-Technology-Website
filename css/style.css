@@ -1,9 +1,3 @@
-/*
-  Theme Name: BizPage
-  Theme URL: https://bootstrapmade.com/bizpage-bootstrap-business-template/
-  Author: BootstrapMade.com
-  License: https://bootstrapmade.com/license/
-*/
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -637,8 +631,22 @@ body.mobile-nav-active #mobile-nav-toggle {
 #about .about-col .img img {
   border-radius: 4px 4px 0 0;
 }
+.icon{
+  width: 64px;
+  height: 64px;
+  /* padding-top: 8px; */
+  text-align: center;
+  /* position: absolute; */
+  background-color: #ffa600;
+  border-radius: 50%;
+  text-align: center;
+  /* border: 4px solid #fff; */
+  left: calc( 50% - 32px);
+  bottom: 20px;
+  transition: 0.3s;
+}
 
-#about .about-col .icon {
+#about .about-col{
   width: 64px;
   height: 64px;
   padding-top: 8px;
@@ -653,6 +661,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   transition: 0.3s;
 }
 
+#about .about-col{
+  border:6px solid rgba(255, 4, 4, 0.7)
+}
+
 #about .about-col i {
   font-size: 36px;
   line-height: 1;
@@ -660,7 +672,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   transition: 0.3s;
 }
 
-#about .about-col:hover .icon {
+#about .about-col:hover .icon1 {
   background-color: #fff;
 }
 
@@ -705,11 +717,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 30px;
 }
 
-#services .icon {
+#services.icon
+ {
   float: left;
 }
 
-#services .icon i {
+#services .icon1 i {
   color: orange;
   font-size: 36px;
   line-height: 1;
