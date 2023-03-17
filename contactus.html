@@ -37,7 +37,7 @@
         <title>Contact Us</title>
     </head>
     
-    <body>
+    <body style="width:100%;">
     <!--==========================
     Header
     ============================-->
@@ -53,7 +53,7 @@
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li class="menu-active"><a href="#intro">Home</a></li>
+          <li class="menu-active"><a href="index.html">Home</a></li>
           <li><a href="#about">About Us</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#team">Blogs</a></li>
@@ -71,42 +71,87 @@
     </header><!-- #header --><br>
           <br>
           <br>
-        <img src="img/ContactUs.jpeg" alt="Girl in a jacket" width="100%" height="400">
+        <img src="img/ContactUs.jpeg" alt="Girl in a jacket" width="100%" height="15%">
         <br>
         <br>
         <!-- <h1>Contact Us</h1> -->
         <p>We would love to hear from you and answer any questions you may have about our services</p>
         </br>
-        <p>Address: Mandikatar Height, Kathmandu, Nepal</p>
-        <p>Phone Number: +977 9843222525</p>
-        <p>Email: info@jagaruk.com</p></br>
-        <div class="row">
-            <div class="col-md-6">
+        <div class="row justify-content-center">
+            <div class="col-10 box_design justify-content-center col-sm-3">
+                <p><b>Address:</b><br>
+                   Mandikatar Height, Kathmandu, Nepal</p>
+            </div>
+            <div class="col-10 box_design justify-content-center col-sm-3">
+                <p><b>Phone Number:</b><br>
+                   +977 9843222525</p>
+            </div>
+            <div class="col-10 box_design justify-content-center col-sm-3">
+                <p><b>Email:</b><br>
+                   info@jagaruk.com</p></br>
+            </div>
+        </div>
+        <br>
+        <br>
+        <style>
+            .box_design{
+                border: 2px solid rgb(211, 109, 15);
+                margin: 5px;
+                padding:5px;
+                display:flex;
+            }
+            .validation{
+                color:red;
+            }
+
+            .form1{
+                margin:2%
+            }
+        </style>
+
+        
+        <div class="row" style="margin:2%;">
+            <div class="col-lg-5 col-md-5 col-sm-9 col-xs-9 form1">
                 <div class="image">
-            <img src="img/ContactUs2.jpeg" alt="Contact Us below" width="450" height="300">
+            <img src="img/ContactUs2.jpeg" alt="Contact Us below" width="350" height="250">
                 </div>
             </div>
             
-        </br>
-        <div class="col-md-6">
-            <div class="form">
+        <div class="col-lg-6 col-md-6 col-sm-9 col-xs-9 form1s">
+            <div class="">
         <h2>Send Your Message To Us</h2>
-        <form action="/action_page.php">
-        <label for="fname">Full Name:</label><br>
-        <input type="text" id="fname" name="fname" value=""><br>
-        <label for="lname">Email:</label><br>
-        <input type="text" id="lname" name="lname" value=""><br>
-        <label for="lname">Subject:</label><br>
-        <input type="text" id="subject" name="subject" value=""><br>
-        <label for="lname">Message:</label><br>
-        <input type="text" id="message" name="message" value=""><br><br>
-        <input type="submit" value="Submit">
-        <br>
-        <br>
-        </form> 
+        <div class="form">
+            <div id="errormessage"></div>
+            <form action="" method="post" role="form" class="contactForm">
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
+                    data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group col-md-6">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                    data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validation"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
+                  data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" data-rule="required"
+                  data-msg="Please write something for us" placeholder="Message"></textarea>
+                <div class="validation"></div>
+              </div>
+              <div class="text-center "><button type="submit" class="btn" style="background:orange">Send Message</button></div>
+            </form>
+          </div> 
         </div>
         </div> 
         </div>
+        <br>
     <!--==========================
     Footer
     ============================-->
